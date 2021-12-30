@@ -6,7 +6,7 @@ const axios = require('axios')
 const bodyParser = require('body-parser')
 
 const PORT = process.env.PORT || 4000
-let wherebyUrl = 'https://api.whereby.dev/v1/'
+let wherebyUrl = 'https://api.whereby.dev/v1'
 
 app.use(cors());
 app.use(express.json());
