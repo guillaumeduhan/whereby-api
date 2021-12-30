@@ -8,11 +8,6 @@ const bodyParser = require('body-parser')
 const PORT = process.env.PORT || 4000
 let wherebyUrl = 'https://api.whereby.dev/v1/'
 
-const headers = {
-  Authorization: 'Basic ' + Buffer.from(process.env.ZOOM_CLIENT_ID + ':' + process.env.ZOOM_SECRET).toString('base64'),
-  'Content-type': "application/x-www-form-urlencoded"
-}
-
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json(), cors())
